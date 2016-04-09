@@ -4,7 +4,7 @@ date: 2016-04-09 19:15:50
 ---
 
 
-##<font color=#778899> 宋偉: </font>
+## <font color=#778899> 宋偉: </font>
 ![WEI](http://a1.qpic.cn/psb?/V14Yj6Tj1MPSQh/LdEyqwz6teVpwR*g10blYveLaO6wlc7KKd5uRX9I6lU!/b/dHEBAAAAAAAA&bo=gAJVAwAAAAAFB*A!&rf=viewer_4)
 
 1995/06/29
@@ -19,7 +19,7 @@ date: 2016-04-09 19:15:50
 
 
 
-##<font color=#778899> 李琪琦: </font>
+## <font color=#778899> 李琪琦: </font>
 
 ![QI](http://b175.photo.store.qq.com/psb?/V14Yj6Tj1MPSQh/xpNfQpRRSO3WHRl0GD8qYTI8OBC3s4p5WfCeMzLMIwk!/b/dFkcW2gZDAAA&bo=gAJZA3sEAAYFCIo!&rf=viewer_4)
 
@@ -33,6 +33,6 @@ date: 2016-04-09 19:15:50
 
 日常：综艺 韩剧 电影 旅游
 
-###携手记录点滴  Be Better BOY&GIRL～
+### 携手记录点滴  Be Better BOY&GIRL～
 ![](http://a3.qpic.cn/psb?/V14Yj6Tj1MPSQh/OSBQzCg5lU8PY71Pc9fqI9AYDtnAJIOWKynZDMI80k8!/b/dHABAAAAAAAA&bo=gAJVAwAAAAAFB*A!&rf=viewer_4)
  
