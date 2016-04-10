@@ -1,12 +1,11 @@
 ---
-title:
+title: fragment监听事件
 date: 2016-04-10 19:56:26
-categories: 生活
-＃tags:Girl
+categories: Android
+tags: 77
 comments: true
 
 ---
-## fragment监听事件
 ###searchView控件为例
 在用Fragment做菜单切换，不再像Activity实例一样可以监听页面上所有物理键的事件，那这种问题如何解决呢？
 采用new一个新的监听实例的方法来解决(下图以SearchView监听事件为例，提交查询后跳转页面)：
