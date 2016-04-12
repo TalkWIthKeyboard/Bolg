@@ -8,6 +8,7 @@ comments: true
 ---
 ## MIUI系统图片获取与裁剪（衔接上一篇：ActionBar实现拍照/从图片库取图片）
 ###1. data.getExtras()取值为空解决方法
+### 1. data.getExtras()取值为空解决方法
 裁剪后的图片通过Intent的putExtra("return-data",true)方法进行传递，miui系统问题就出在这里，return-data的方式只适用于小图，miui系统默认的裁剪图片可能裁剪得过大，或对return-data分配的资源不足，造成return-data失败。
 
      //Bundle extras = data.getExtras();
@@ -54,6 +55,7 @@ onActivityResult()中处理:
 
 
 ###2. Intent命名问题：
+### 2. Intent命名问题：
 
 在onOptionsItemSelected()方法中，选择拍照模式和从相册取图片两种模式时分别根据menu选择创建了两个Intent，命名为intent1和intent2，接下来cropPhoto()方法中新建裁剪的Intent，但是这里我起初以下列方式：
        
