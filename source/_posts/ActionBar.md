@@ -7,7 +7,7 @@ comments: true
 
 ---
 ## 利用actionBar做拍照/从相册选取
-###1. 设置ActionBar
+### 1. 设置ActionBar
 
 在AndroidManifest.xml中指定Application或Activity的theme是Theme.Holo或其子类。在Android 3.0及更高的版本中，Activity中都默认包含有ActionBar组件。
 
@@ -38,7 +38,7 @@ comments: true
             android:logo="@mipmap/main_icon">
     </activity>
      
-###2.设置Action按钮
+### 2.设置Action按钮
 在menu下创建一个新的.xml布局文件，布局item选项按钮：
 
     <menu xmlns:android="http://schemas.android.com/apk/res/android"
@@ -53,7 +53,7 @@ comments: true
     </menu>
   
   
-###3.Activity中menu处理
+### 3.Activity中menu处理
 
   Activity启动的时候，系统会调用Activity的onCreateOptionsMenu()方法来取出所有的Action按钮，我们只需要在这个方法中去加载一个menu资源，并把所有的Action按钮都定义在资源文件里面就可以了。
   
@@ -65,7 +65,7 @@ comments: true
         return super.onCreateOptionsMenu(menu);
     }
 
-###4.Action按钮的点击事件
+### 4.Action按钮的点击事件
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -90,7 +90,7 @@ comments: true
         }
     }
     
-###5.头像显示控件初始化
+### 5.头像显示控件初始化
 在activity中需要先对头像图片的显示控件做初始化：
 
     private Bitmap head;//头像Bitmap
@@ -125,5 +125,7 @@ comments: true
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     
  *参考链接：*
- http://www.mincoder.com/article/1847.shtml
- http://www.cnblogs.com/yc-755909659/p/4290784.html
+ 
+ [http://www.mincoder.com/article/1847.shtml](http://www.mincoder.com/article/1847.shtml)
+ [http://www.cnblogs.com/yc-755909659/p/4290784.html](http://www.cnblogs.com/yc-755909659/p/4290784.html
+)
