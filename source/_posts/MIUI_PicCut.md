@@ -10,14 +10,16 @@ comments: true
 ### 1. data.getExtras()取值为空解决方法
 裁剪后的图片通过Intent的putExtra("return-data",true)方法进行传递，miui系统问题就出在这里，return-data的方式只适用于小图，miui系统默认的裁剪图片可能裁剪得过大，或对return-data分配的资源不足，造成return-data失败。
 
+```Java
      //Bundle extras = data.getExtras();
      //Bitmap head = extras.getParcelable("data");
+```
 **当data不为空的时候 这里的extras和head去取值 结果都为空！！**
 
 解决思路是：裁剪后，将裁剪的图片保存在Uri中，在onActivityResult()方法中，再提取对应的Uri图片转换为Bitmap使用。
 其实大家直观也能感觉出来，Intent主要用于不同Activity之间通信，是一种动态的小巧的资源占用，类似于Http请求中的GET，并不适用于传递图片之类的大数据。于是当A生成一个大数据要传递给B，往往不是通过Intent直接传递，而是在A生成数据的时候将数据保存到C，B再去调用C，C相当于一个转换的中间件。
 
-```java
+```Java
     public void cropPhoto(Uri uri) {
         Intent intent3 = new Intent("com.android.camera.action.CROP");
         intent3.setDataAndType(uri, "image/*");
@@ -38,6 +40,7 @@ comments: true
     
 onActivityResult()中处理:
 
+```Java
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // TODO Auto-generated method stub
@@ -49,6 +52,7 @@ onActivityResult()中处理:
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
+```
  **参考链接：**
 [http://m.blog.csdn.net/article/details?id=42719217](http://m.blog.csdn.net/article/details?id=42719217/)
 
@@ -63,7 +67,7 @@ onActivityResult()中处理:
      Intent intent3 = new Intent("com.android.camera.action.CROP");
 后，运行结果正常了。目前我对于Intent的回调机制还不是很清楚，这个问题先记录在此，可能是由于其他页面跳转建立的Intent冲突，日后再补充。
 
-
+```Java
     private ImageView ivHead;//头像显示
     private Bitmap head;//头像Bitmap
     private Uri uritempFile;//大图转换
@@ -195,3 +199,4 @@ onActivityResult()中处理:
             }
         }
     }
+```
