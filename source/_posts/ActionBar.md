@@ -11,6 +11,8 @@ comments: true
 
 在AndroidManifest.xml中指定Application或Activity的theme是Theme.Holo或其子类。在Android 3.0及更高的版本中，Activity中都默认包含有ActionBar组件。
 
+<!-- more -->
+
     <style name="protraitBarTheme" parent="@android:style/Theme.Holo.Light">
         <item name="android:actionBarStyle">@style/MyActionBar</item>
         <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>

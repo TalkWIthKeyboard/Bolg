@@ -10,6 +10,8 @@ comments: true
 ### 1. data.getExtras()取值为空解决方法
 裁剪后的图片通过Intent的putExtra("return-data",true)方法进行传递，miui系统问题就出在这里，return-data的方式只适用于小图，miui系统默认的裁剪图片可能裁剪得过大，或对return-data分配的资源不足，造成return-data失败。
 
+<!-- more -->
+
 ```Java
      //Bundle extras = data.getExtras();
      //Bitmap head = extras.getParcelable("data");
